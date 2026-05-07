@@ -86,4 +86,9 @@ int main() {
     fclose(fp);
     return 0;
     //remind me to add more documentation later.
+    //TODO:
+    //Add some easter eggs for specific words
+    //Words: Gay - Makes Text rainbow
+    //egg - something i dont have an idea yet
+    //owo @ uwu - add cat ears to box.
 }
