@@ -62,7 +62,7 @@ int main() {
         mvprintw(row, col, "%s", fuckit);
         mvprintw(row+1, cold, "+---+");
         
-        mvprintw(LINES - 1, 0, "| press n to exit. | press m to loop. | TOTAL:%d | Session:%d | 2soup | SOURCE https://github.com/iam2soup/RAGcloth/tree/main |", amm, thisamm);
+        mvprintw(LINES - 1, 0, "| press n to exit. | press m to loop. | TOTAL:%d | Session:%d | 2soup | https://github.com/iam2soup/RAGcloth/ |", amm, thisamm);
         refresh();
         while(crapp != 'm') {
             crapp = getch();
