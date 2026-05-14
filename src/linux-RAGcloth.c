@@ -91,4 +91,5 @@ int main() {
     //Words: Gay - Makes Text rainbow
     //egg - something i dont have an idea yet
     //owo @ uwu - add cat ears to box.
+    //Add way in command line and when you press a key to change the ammount of letters generated
 }
