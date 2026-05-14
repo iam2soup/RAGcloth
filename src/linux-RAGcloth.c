@@ -40,9 +40,9 @@ int main() {
     char ranla = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[random () % 26];
     char ranlb = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[random () % 26];
     char ranlc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[random () % 26];
-    char fuckit[6] = {'|', ranla, ranlb, ranlc, '|', '\0'};
-    char crapp = 'a';
-    while(crapp != 'n') {
+    char rantotal[6] = {'|', ranla, ranlb, ranlc, '|', '\0'};
+    char placeholdr = 'a';
+    while(placeholdr != 'n') {
         // Increaces thisamm and amm by 1.
         thisamm++;
         amm++;
@@ -51,22 +51,22 @@ int main() {
         fp = fopen(".RAG.2SDAT", "w");
         sprintf(buffera, "%d\n", amm);
         fputs(buffera, fp);
-        char crapp = 'a';
+        char placeholdr = 'a';
         int cold = (COLS - strlen("+---+")) / 2;
         int row = LINES / 2;
         
-        int col = (COLS - strlen(fuckit)) / 2;
+        int col = (COLS - strlen(rantotal)) / 2;
         
 
         mvprintw(row-1, cold, "+---+");
-        mvprintw(row, col, "%s", fuckit);
+        mvprintw(row, col, "%s", rantotal);
         mvprintw(row+1, cold, "+---+");
         
         mvprintw(LINES - 1, 0, "| press n to exit. | press m to loop. | TOTAL:%d | Session:%d | 2soup | https://github.com/iam2soup/RAGcloth/ |", amm, thisamm);
         refresh();
-        while(crapp != 'm') {
-            crapp = getch();
-            if (crapp == 'n') {
+        while(placeholdr != 'm') {
+            placeholdr = getch();
+            if (placeholdr == 'n') {
                 goto exit;
             }
         }
@@ -74,9 +74,9 @@ int main() {
         ranla = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[random () % 26];
         ranlb = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[random () % 26];
         ranlc = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"[random () % 26];
-        fuckit[1] = ranla;
-        fuckit[2] = ranlb;
-        fuckit[3] = ranlc;
+        rantotal[1] = ranla;
+        rantotal[2] = ranlb;
+        rantotal[3] = ranlc;
     }
     exit:
         endwin();
